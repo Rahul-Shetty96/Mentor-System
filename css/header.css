@@ -1,0 +1,26 @@
+.header_row{
+			height: 150px;
+			border-bottom: 4px solid grey;
+			box-shadow: 2px 2px 2px grey;
+		}
+		.o{
+			height: 100%;
+		}
+		.logo{
+			height: 100%;
+			width: 70%;
+			margin: 0 30px;
+		}
+		
+		.heading{
+			font-size: 50px;
+	    text-align : center;
+			line-height: 150px;
+		}
+		.b{
+			border : 2px solid grey;
+		}
+		body{
+			font-family: 'Montserrat', sans-serif;
+		}
+		//*{ border : 2px solid grey; }
