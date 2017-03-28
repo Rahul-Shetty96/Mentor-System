@@ -136,3 +136,8 @@ function add_mentor()
     	}
     });
 }
+
+function assign(d)
+{
+    window.location = "../html/list.php?class="+d;
+}
