@@ -195,13 +195,13 @@
 	<div class="row row4h">
 			<div class="col-md-offset-2 col-md-8 row4h_1">
 					<div class="col-md-4">
-						<button class="btn btn-primary">D10</button>
+						<button class="btn btn-primary" onclick="assign('D10')">D10</button>
 					</div>
 					<div class="col-md-4">
-						<button class="btn btn-primary">D15</button>
+						<button class="btn btn-primary" onclick="assign('D15')">D15</button>
 					</div>
 					<div class="col-md-4">
-						<button class="btn btn-primary">D20</button>
+						<button class="btn btn-primary"  onclick="assign('D20')">D20</button>
 					</div>
 			</div><!--.row4h_1-->
 	</div><!--.row4h-->
