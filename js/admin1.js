@@ -2,16 +2,41 @@ $(document).ready(function(){
    $("#logoutbtn").css('display','block'); 
 });
 
+var prev_c = -1;
+var prev_id = -1;
+var first_time = true;
 
 function slidetoggle(id,c,b){
-	
-    //Slide the div
-	$(c).slideToggle("slow");
-	glyphi(id);
+    console.log(id+" "+c+" "+prev_c+" p "+prev_id);
+	if(first_time)
+    {
+        first_time = false;
+        glyphi(c,id);     //only open
+    }
+    else if(prev_c == c)
+	{
+        glyphi(c,id);     //only close
+        first_time = true;
+    }
+    else
+    { 
+        glyphi(prev_c,prev_id);    //close previous
+        glyphi(c,id);              //open new
+    }
+    prev_c = c;
+    prev_id = id;
+
+    if(id == "button2")
+    {
+        $("#change_student_form").slideUp("slow");    //close inner tab
+    }
+
 };
 
-function glyphi(id)
+function glyphi(c,id)
 {
+    //Slide the div
+    $(c).slideToggle("slow");
 	//Change glyphicon on the button
 	var gly = $("#"+id+" span").attr("class");
 	if(gly.indexOf("down")>=0)
