@@ -1,22 +1,22 @@
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
-*{margin:0; padding:0}
-body{background:white; font-family: 'Source Sans Pro', sans-serif;}
-.form{width:30%; margin:50px auto; background:#1C2B4A;border-radius: 8px 8px 8px 8px;}
-.header{height:44px; background:#17233B;border-radius: 8px 8px 8px 8px;}
-.header h2{height:44px; line-height:44px; color:#fff; text-align:center;border-radius: 8px;}
-.login{padding:0 20px}
-.login span.un{width:10%; text-align:center; color:#0C6; border-radius:3px 0 0 3px}
-.text{background:#12192C; width:90%; border-radius:0 3px 3px 0; border:none; outline:none; color:#999; font-family: 'Source Sans Pro', sans-serif} 
-.text,.login span.un{display:inline-block; vertical-align:top; height:40px; line-height:40px; background:#12192C;}
-
-.btn{height:40px; border:none; background:#0C6; width:20%; outline:none; font-family: 'Source Sans Pro', sans-serif; font-size:20px; font-weight:bold; color:#eee; border-bottom:solid 3px #093; border-radius:8px; cursor:pointer}
-ul li{height:40px; margin:15px 0; list-style:none}
-.span{display:table; width:100%; font-size:14px;}
-.ch{display:inline-block; width:50%; color:#CCC}
-.ch a{color:#CCC; text-decoration:none}
-.ch:nth-child(2){text-align:right}
-.cen{
-    text-align: center;
+.username,.password,.button{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-@media(max-width:480px){ .form{width:100%}}
+
+.text{
+	font-size: 20px;
+}
+
+.form{
+	text-align: center;
+	margin-top  : 30px;
+	border : 2px solid grey;
+	background-color:  	#F8F8FF;
+	border-radius: 10px;
+	padding-top: 20px;
+}
+
+#logoutbtn{
+	display: none;
+	visibility: hidden;
+}

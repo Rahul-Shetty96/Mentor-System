@@ -19,15 +19,30 @@
 
 <body>
 
-<?php require 'header.php'; ?>
+<?php 
+	session_start();
+	if(!isset($_SESSION['admin']))
+	{
+		header('Location:logform.php');
+	}
+	require 'header.php'; 
 
-
-
+	if(isset($_POST['logout']))
+	{
+		session_destroy();
+		header('Location:logform.php');
+	}
+?>
+<div class="container-fluid">
+	<div class="row">
+	<div class="welcome col-md-offset-1 col-md-3">Welcome Admin!</div>
+	</div>
+</div>
 <!--part 1-->
 <div class="container-fluid">
 	<div class="row row1b">
 	    <div class=" col-md-offset-1">
-			<button class="btn btn-default btn-primary" id="button1" onclick='slidetoggle(this.id,"#add_student")'> Add Students&nbsp&nbsp
+			<button class="btn btn-default btn-primary" id="button1" onclick='slidetoggle(this.id,"#add_student",0)'> Add Students&nbsp&nbsp
 			<span class="glyphicon glyphicon-menu-down"</span></button>
 		</div>
 	</div>
@@ -55,7 +70,7 @@
 						<div class="col-md-3">
 							<input type="file"  accept=".csv" class="filestyle" name="csv" id="image_src" data-input="false" data-iconName="fa fa-upload" data-buttonText="Upload File" required/>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-2">
 							<button class="btn btn-default btn-primary" name="submit"> ADD</button>
 						</div>
 				</form>
@@ -74,7 +89,7 @@
 <div class="container-fluid">
 	<div class="row row2b">
 	    <div class=" col-md-offset-1">
-			<button class="btn btn-default btn-primary" id="button2" onclick='slidetoggle(this.id,"#change_student")'> Change Student Details&nbsp&nbsp<span class="glyphicon glyphicon-menu-down"</span></button>
+			<button class="btn btn-default btn-primary" id="button2" onclick='slidetoggle(this.id,"#change_student",1)'> Change Student Details&nbsp&nbsp<span class="glyphicon glyphicon-menu-down"</span></button>
 		</div>
 	</div>
 </div><!-- button for change students-->
@@ -148,7 +163,7 @@
 <div class="container-fluid">
 	<div class="row row3b">
 	    <div class=" col-md-offset-1">
-			<button class="btn btn-default btn-primary" id="button3" onclick='slidetoggle(this.id,"#add_mentor")'>Create Mentor Account&nbsp&nbsp
+			<button class="btn btn-default btn-primary" id="button3" onclick='slidetoggle(this.id,"#add_mentor",2)'>Create Mentor Account&nbsp&nbsp
 			<span class="glyphicon glyphicon-menu-down"</span></button>
 		</div>
 	</div>
@@ -183,7 +198,7 @@
 <div class="container-fluid">
 	<div class="row row4b">
 	    <div class=" col-md-offset-1">
-			<button class="btn btn-default btn-primary" id="button4" onclick='slidetoggle(this.id,"#assign_mentor")'> Assign Mentor&nbsp&nbsp
+			<button class="btn btn-default btn-primary" id="button4" onclick='slidetoggle(this.id,"#assign_mentor",3)'> Assign Mentor&nbsp&nbsp
 			<span class="glyphicon glyphicon-menu-down"</span></button>
 		</div>
 	</div>

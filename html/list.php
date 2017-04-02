@@ -17,16 +17,21 @@
 
 <body>
 
-
 <?php 
+	session_start();
+	if(!isset($_SESSION['admin']))
+	{
+		header('Location:logform.php');
+	}
+	if(isset($_POST['logout']))
+	{
+		session_destroy();
+		header('Location:logform.php');
+	}
+	require 'header.php'; 
+	$class = $_GET['class'];
 
-//if(!isset($_POST['username']))
-//header('Location:adminlogin.php');
-
-require 'header.php'; 
-$class = $_GET['class'];
-
-$con=mysqli_connect("localhost","root","","mentordb") or die("couldn't to the  server");
+	$con=mysqli_connect("localhost","root","","mentordb") or die("couldn't to the  server");
 
 $res1 = mysqli_query($con,"select count(*) as c from mentee where class='$class'");
 $a = mysqli_fetch_assoc($res1);

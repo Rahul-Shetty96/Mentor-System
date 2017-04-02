@@ -10,5 +10,11 @@
 			Online Mentoring System
 	</div>
 
+	<div class="col-md-2 col-md-offset-1 logout">
+	<form action="#" method="POST">
+	<button class="btn btn-default btn-primary" id="logoutbtn" name="logout">Logout</button>
+	</div>
+	</form>
+
 </div>
 

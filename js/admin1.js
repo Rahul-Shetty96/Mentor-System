@@ -1,9 +1,11 @@
 $(document).ready(function(){
+   $("#logoutbtn").css('display','block'); 
 });
 
-function slidetoggle(id,c){
+
+function slidetoggle(id,c,b){
 	
-	//Slide the div
+    //Slide the div
 	$(c).slideToggle("slow");
 	glyphi(id);
 };

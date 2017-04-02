@@ -19,14 +19,14 @@
 </head>
 <body>
 <?php include 'header.php'; ?>
-	
+
 
 
 <form action="#" method="post">
 <div class="col-md-4 col-md-offset-4 form">
-	<div class="col-md-12 text">Admin login</div>
+	<div class="col-md-12 text">Mentor login</div>
 	<div class="col-md-12 username">
-		<input type="text" name="username" class="form-control" placeholder="Username" required="true"/>
+		<input type="text" name="email" class="form-control" placeholder="Email" required="true"/>
 	</div>
     <div class="col-md-12 password">
 		<input type="password" name="password" class="form-control" placeholder="Password" required="true"/>
@@ -36,17 +36,24 @@
 	</div>
 </div>
 </form>
+
+
+
+
+
 <?php
 	if(isset($_POST['submit']))
 	{
+		$con=mysqli_connect("localhost","root","","mentordb") or die("couldn't to the  server");
 		session_start();
-		$username = $_POST['username'];
+		$email = $_POST['email'];
 		$pwd = $_POST['password'];
+		$res = mysqli_query($con,"select count(*) from mentor where email='$email' and password='$pwd'");
 
-		if($username == 'break_it' && $pwd=='you_cant')
+		if(mysqli_num_rows($res)==1)
 		{
-			$_SESSION['admin'] = 'rahul';
-			header('Location:admin1.php');
+			$_SESSION['email'] = $email;
+			header('Location:mentorpage.php');
 		}
 		else
 		{
