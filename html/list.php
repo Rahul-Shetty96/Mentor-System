@@ -63,7 +63,12 @@ for($x = 1; $x <= $n; $x++)
 	$x--;
 }
 ?>
-<div class="class_name"><?php echo $_GET['class']; ?></div>
+<div class="container class_name">
+	<ul class="breadcrumb">
+	    <li><a href="admin1.php">Home</a></li>
+	    <li><a href="#"><?php echo $_GET['class']; ?></a></li>
+	</ul>
+</div>
 <div class="container main">
   <table class="table table-striped">
     <thead>

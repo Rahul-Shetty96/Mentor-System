@@ -42,15 +42,18 @@
 
 
 <?php
+	session_start();
+	if(isset($_SESSION['email']))
+		header('Location:mentorpage.php');
 	if(isset($_POST['submit']))
 	{
 		$con=mysqli_connect("localhost","root","","mentordb") or die("couldn't to the  server");
-		session_start();
 		$email = $_POST['email'];
 		$pwd = $_POST['password'];
-		$res = mysqli_query($con,"select count(*) from mentor where email='$email' and password='$pwd'");
-
-		if(mysqli_num_rows($res)==1)
+		$query = "select * from mentor where email='$email' and password='$pwd'";
+		$res = mysqli_query($con,$query);
+		echo $query,mysqli_num_rows($res);
+		if(mysqli_num_rows($res) == 1)
 		{
 			$_SESSION['email'] = $email;
 			header('Location:mentorpage.php');

@@ -37,9 +37,13 @@
 </div>
 </form>
 <?php
+
+	session_start();
+	if(isset($_SESSION['admin']))
+	header('Location:admin1.php');
+	
 	if(isset($_POST['submit']))
 	{
-		session_start();
 		$username = $_POST['username'];
 		$pwd = $_POST['password'];
 
