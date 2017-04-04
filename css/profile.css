@@ -13,7 +13,7 @@
 
 .text_header{
 	text-align: center;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .datebox{
@@ -28,4 +28,8 @@
 
 .issuebox{
 	margin : 20px auto;
+}
+
+.table_container{
+	margin-bottom: 50px;
 }

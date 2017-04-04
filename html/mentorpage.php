@@ -107,8 +107,15 @@
             
             $row = $res2->fetch_array();
             $nm =  $row['next_meet'];
+             if($nm == null)
+              $nm = "-";
+            else{
+            $day = substr($nm,8,2);
+            $month = substr($nm,5,2);
+            $year = substr($nm,0,4);
 
-
+            $nm = $day."/".$month."/".$year;
+          }
         }
 
 
@@ -187,6 +194,16 @@
             
             $row = $res2->fetch_array();
             $nm =  $row['next_meet'];
+
+            if($nm == null)
+              $nm = "-";
+            else{
+            $day = substr($nm,8,2);
+            $month = substr($nm,5,2);
+            $year = substr($nm,0,4);
+
+            $nm = $day."/".$month."/".$year;
+          }
         }
 
 
@@ -216,7 +233,78 @@
       </tr>
     </thead>
     <tbody>
-    
+    <?php
+
+    $query = "Select email,roll_no,name from mentee where mentor = '".$_SESSION['email']."' and class='D20' order by roll_no";
+      $res = mysqli_query($con,$query);
+
+      $ar1 = array();
+      $ar2 = array();
+      $ar3 = array();
+      while ($row = $res->fetch_array())
+      {
+           $ar1[] = $row['email'];
+           $ar2[] = $row['roll_no'];
+           $ar3[] = $row['name'];
+      }
+
+      for($i=0;$i<sizeof($ar1);$i++)
+      {
+        $roll = $ar2[$i];
+        $email = $ar1[$i];
+        $name = $ar3[$i];
+
+        $q1 = "select * from log_record where email = '".$email."' order by prev_meet desc limit 1";
+        $q2 = "select * from next_meet where email = '".$email."' order by next_meet";
+        $res1 = mysqli_query($con,$q1);
+        $res2 = mysqli_query($con,$q2);
+        if(mysqli_num_rows($res1)==0 && mysqli_num_rows($res2)==0)
+        {
+          $nm = "-";
+          $pm = "-";
+          $is = "-";
+        }
+        else
+        {
+             $row = $res1->fetch_array();
+            $pm =  $row['prev_meet'];
+            
+            //pre-process date
+            $day = substr($pm,8,2);
+            $month = substr($pm,5,2);
+            $year = substr($pm,0,4);
+
+            $pm = $day."/".$month."/".$year;
+
+
+            $is =  $row['issue'];
+            
+            $row = $res2->fetch_array();
+            $nm =  $row['next_meet'];
+
+             if($nm == null)
+              $nm = "-";
+            else{
+            $day = substr($nm,8,2);
+            $month = substr($nm,5,2);
+            $year = substr($nm,0,4);
+
+            $nm = $day."/".$month."/".$year;
+          }
+        }
+
+
+
+
+  
+
+        echo "<tr><td>".$roll.'</td><td><a href="profile.php?email='.$email.'">'.$name."</a></td><td>".$pm."</td><td>".$is."</td><td>".$nm."</td></tr>";
+      }
+
+
+
+
+    ?>
     </tbody>
   </table>
 </div>

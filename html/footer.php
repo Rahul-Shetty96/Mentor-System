@@ -9,6 +9,6 @@
 	 Copyright&copy 2017
 	</span>
 	<span class="developed">
-		Developed by Group 9
+		Developed by Group 9&nbsp&nbsp 
 	</span>
  </div>
