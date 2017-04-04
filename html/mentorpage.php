@@ -11,6 +11,8 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"></script>
 	<link href="../css/header.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="../css/footer.css">
+
 </head>
 <body>
 
@@ -218,6 +220,6 @@
     </tbody>
   </table>
 </div>
-
+<?php require'footer.php' ?>
 </body>
 </html>

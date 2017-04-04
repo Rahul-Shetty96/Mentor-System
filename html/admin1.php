@@ -10,10 +10,12 @@
 	<script src="../js/admin1.js" type="text/javascript"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"></script>
 	<link href="../css/header.css" rel="stylesheet">
-	<link href="../css/admin1.css" rel="stylesheet">
+	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
-					 
+	<link rel="stylesheet" href="../css/footer.css">
+	<link href="../css/admin1.css" rel="stylesheet">
+				 
     
 </head>
 
@@ -241,6 +243,9 @@
       </div>
     </div>
   </div>
-</div>	
+</div>
+
+
+<?php require'footer.php' ?>	
 </body>
 </html>

@@ -1,3 +1,5 @@
+<div class="wrapper">
+
 <nav class="navbar">
 <div class="container-fluid">
 	<div class="row header_row">

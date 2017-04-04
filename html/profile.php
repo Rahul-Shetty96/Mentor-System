@@ -13,7 +13,7 @@
 	<link href="../css/header.css" rel="stylesheet">
 	<link href="../css/profile.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+	<link rel="stylesheet" href="../css/footer.css">
 
 	<!-- For datepicker -->
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -45,7 +45,7 @@
 <div class="container class_name">
 	<ul class="breadcrumb">
 	    <li><a href="mentorpage.php">Home</a></li>
-	    <li><a href="#"><?php echo $name." (Class : ".$clss." &nbsp&nbsp Roll no : ".$roll." )"; ?></a></li>
+	    <li><a href="studentprofile.php/email=<?php echo $_GET['email'] ?>"><?php echo $name." (Class : ".$clss." &nbsp&nbsp Roll no : ".$roll." )"; ?></a></li>
 	</ul>
 </div>
 
@@ -119,6 +119,6 @@
     </table>
 </div>
 
-
+<?php require'footer.php' ?>
 </body>
 </html>

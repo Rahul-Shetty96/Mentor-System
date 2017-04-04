@@ -15,7 +15,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	
+	<link rel="stylesheet" href="../css/footer.css">
+
 </head>
 <body>
 <?php include 'header.php'; ?>
@@ -64,6 +65,10 @@
 		}
 	}
  ?>
+
+
+
+ <?php require'footer.php' ?>
 </body>
 <script type="text/javascript">
 	$(function(){

@@ -157,8 +157,8 @@ function add_mentor()
     			function()
     			{
     				$('#myModal').modal('hide');
-    				$("#add_mentor").slideUp("slow");
-    				glyphi("button3");
+                    first_time = true;
+    				glyphi("#add_mentor","button3");
     			},3000);
     	}
     });

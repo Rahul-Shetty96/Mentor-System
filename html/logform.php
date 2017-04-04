@@ -15,7 +15,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	
+	<link rel="stylesheet" href="../css/footer.css">
+
 </head>
 <body>
 <?php include 'header.php'; ?>
@@ -57,6 +58,8 @@
 			echo '<div class="alert alert-danger col-md-offset-4 col-md-4" style="text-align:center">Invalid username or Password</div>';
 		}
 	}
+
+	require 'footer.php'; 
  ?>
 </body>
 <script type="text/javascript">

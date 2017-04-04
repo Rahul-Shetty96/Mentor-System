@@ -14,9 +14,11 @@
 	background-color:  	#F8F8FF;
 	border-radius: 10px;
 	padding-top: 20px;
+	display: block;
 }
 
 #logoutbtn{
 	display: none;
 	visibility: hidden;
 }
+
