@@ -72,12 +72,17 @@ function submit_issue(){
 
 function next_meet()
 {
+
 	var date = $('.date').val();
+	if(date == "")
+	{
+		$('.date_error').slideDown("slow").delay("2000").slideUp("slow");
+		return;
+	}	
 	var y = date.substring(date.lastIndexOf("/")+1);
 	var d = date.substring(date.indexOf("/")+1,date.lastIndexOf("/"));
 	var m = date.substring(0,date.indexOf("/"));
 	var date = y+"-"+m+"-"+d;
-
 
 	$.ajax({
 				url : "../php/date_insert.php",

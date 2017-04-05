@@ -5,7 +5,7 @@
   { 
 
   	$email = $_POST['email'];
-  	$query = "select * from log_record where email = '".$email."' order by prev_meet";
+  	$query = "select * from log_record where email = '".$email."' order by prev_meet desc";
 	    
   		echo "<tbody>";
 	    $res = mysqli_query($con,$query);

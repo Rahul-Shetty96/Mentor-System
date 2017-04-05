@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2017 at 09:51 PM
+-- Generation Time: Apr 05, 2017 at 07:01 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -37,22 +37,12 @@ CREATE TABLE `log_record` (
 --
 
 INSERT INTO `log_record` (`email`, `prev_meet`, `issue`) VALUES
-('jai.hinduja@ves.ac.in', '2017-04-04', 'Facing difficulty in studies.'),
-('jai.hinduja@ves.ac.in', '2017-04-04', 'Facing difficulty in sports.'),
-('jai.hinduja@ves.ac.in', '2017-04-04', 'Facing difficulty in everything.'),
-('arpan.gulrajani@ves.ac.in', '2017-04-04', 'bmnbvmnbn iuiyu'),
-('arpan.gulrajani@ves.ac.in', '2017-04-04', 'kjgkjgjkgd khdsfkjh kj'),
-('2015kaushal.bhogale@ves.ac.in', '2017-04-04', 'fewjkljf welrj;'),
-('nikhil.jethwani@ves.ac.in', '2017-04-04', 'Life is going great..Thank God'),
-('2015praveen.dangwani@ves.ac.in', '2017-04-04', 'Hello brother'),
-('2015praveen.dangwani@ves.ac.in', '2017-04-04', 'How are you'),
-('2015navin.dhamriyani@ves.ac.in', '2017-04-04', 'Kem cho..maja ma'),
-('2015prasad.gujar@ves.ac.in', '2017-04-04', 'Its going great brother'),
-('siddhesh.hindalekar@ves.ac.in', '2017-04-04', 'Awesome brother'),
-('jeetiksha.chandiramani@ves.ac.in', '2017-04-04', 'I am doing good now.'),
-('jeetiksha.chandiramani@ves.ac.in', '2017-04-04', 'Life is great..So am I.'),
-('2015harsha.achara@ves.ac.in', '2017-04-04', 'Life is amazing..So am I..'),
-('2015hema.lulla@ves.ac.in', '2017-04-04', 'She is doing good.');
+('2015aman.gupta@ves.ac.in', '2017-04-05', 'I am good..'),
+('2015sagar.ganiga@ves.ac.in', '2017-04-05', 'Late meeting'),
+('ameya.parab@ves.ac.in', '2017-04-05', 'You are a good student...'),
+('payal.popat@ves.ac.in', '2017-04-05', 'You should work more..'),
+('raj.ramchandani@ves.ac.in', '2017-04-05', 'You should play sports..'),
+('nitin.rohra@ves.ac.in', '2017-04-05', 'You are really doing great.Do the same everywhere.Work hard.Play hard.');
 
 -- --------------------------------------------------------
 
@@ -73,9 +63,9 @@ CREATE TABLE `mentee` (
 --
 
 INSERT INTO `mentee` (`email`, `name`, `class`, `roll_no`, `mentor`) VALUES
-('2015.kaustubh.thanekar@ves.ac.in', 'Kaustubh Thanekar', 'D10', 73, 'parth.chandrana.ves.ac.in'),
+('2015.kaustubh.thanekar@ves.ac.in', 'Kaustubh Thanekar', 'D10', 73, 'parth.chandrana@ves.ac.in'),
 ('2015aarti.bhagtani@ves.ac.in', 'Aarti Bhagtani', 'D10', 12, 'amit.singh@ves.ac.in'),
-('2015abhishek.shere@ves.ac.in', 'Abhishek Shere', 'D10', 67, 'parth.chandrana.ves.ac.in'),
+('2015abhishek.shere@ves.ac.in', 'Abhishek Shere', 'D10', 67, 'parth.chandrana@ves.ac.in'),
 ('2015abid.inamdar@ves.ac.in', 'Abid Inamdar', 'D10', 37, 'roopkala.ravindran@ves.ac.in'),
 ('2015adheesh.juvekar@ves.ac.in', 'Adheesh Juvekar', 'D10', 42, 'roopkala.ravindran@ves.ac.in'),
 ('2015aditya.bhatia@ves.ac.in', 'Aditya Bhatia', 'D10', 14, 'amit.singh@ves.ac.in'),
@@ -87,49 +77,49 @@ INSERT INTO `mentee` (`email`, `name`, `class`, `roll_no`, `mentor`) VALUES
 ('2015arvind.narayanan@ves.ac.in', 'Arvind Narayanan', 'D10', 6, 'amit.singh@ves.ac.in'),
 ('2015asutosh.padhi@ves.ac.in', 'Asutosh Padhi', 'D10', 55, 'asha.bharambhe@ves.ac.in'),
 ('2015bhavika.adnani@ves.ac.in ', 'Bhavika Adnani', 'D10', 2, 'amit.singh@ves.ac.in'),
-('2015bhavika.shahani@ves.ac.in', 'Bhavika Shahani', 'D10', 65, 'parth.chandrana.ves.ac.in'),
+('2015bhavika.shahani@ves.ac.in', 'Bhavika Shahani', 'D10', 65, 'parth.chandrana@ves.ac.in'),
 ('2015deepesh.haryani@ves.ac.in', 'Deepesh Haryani', 'D10', 32, 'pooja.shetty@ves.ac.in'),
 ('2015dhiraj.choithramani@ves.ac.in', 'Dhiraj Choithramani', 'D10', 22, 'pooja.shetty@ves.ac.in'),
-('2015dipshi.shetty@ves.ac.in', 'Dipshi Shetty', 'D10', 68, 'parth.chandrana.ves.ac.in'),
-('2015girish.teckchandani@ves.ac.in', 'Girish Teckchandani', 'D10', 72, 'parth.chandrana.ves.ac.in'),
+('2015dipshi.shetty@ves.ac.in', 'Dipshi Shetty', 'D10', 68, 'parth.chandrana@ves.ac.in'),
+('2015girish.teckchandani@ves.ac.in', 'Girish Teckchandani', 'D10', 72, 'parth.chandrana@ves.ac.in'),
 ('2015harsh.jain@ves.ac.in', 'Harsh Jain', 'D10', 39, 'roopkala.ravindran@ves.ac.in'),
 ('2015harsha.achara@ves.ac.in', 'Harsha Achara', 'D10', 1, 'amit.singh@ves.ac.in'),
 ('2015heena.dawani@ves.ac.in', 'Heena Dawani', 'D10', 26, 'pooja.shetty@ves.ac.in'),
 ('2015hema.lulla@ves.ac.in', 'Hema Lulla', 'D10', 50, 'asha.bharambhe@ves.ac.in'),
 ('2015hiten.chawla@ves.ac.in', 'Hiten Chawla', 'D10', 20, 'pooja.shetty@ves.ac.in'),
 ('2015inderjeet.saluja@ves.ac.in', 'Inderjeet Saluja', 'D10', 63, 'asha.bharambhe@ves.ac.in'),
-('2015isha.shetty@ves.ac.in', 'Isha Shetty', 'D10', 69, 'parth.chandrana.ves.ac.in'),
+('2015isha.shetty@ves.ac.in', 'Isha Shetty', 'D10', 69, 'parth.chandrana@ves.ac.in'),
 ('2015ishita.bhatnagar@ves.ac.in', 'Ishita Bhatnagar', 'D10', 15, 'amit.singh@ves.ac.in'),
 ('2015jackie.hinduja@ves.ac.in', 'Jackie Hinduja', 'D10', 34, 'roopkala.ravindran@ves.ac.in'),
 ('2015karan.hotwani@ves.ac.in', 'Karan Hotwani', 'D10', 36, 'roopkala.ravindran@ves.ac.in'),
-('2015karan.valecha@ves.ac.in', 'Karan Valecha', 'D10', 76, 'parth.chandrana.ves.ac.in'),
+('2015karan.valecha@ves.ac.in', 'Karan Valecha', 'D10', 76, 'parth.chandrana@ves.ac.in'),
 ('2015kaushal.bhogale@ves.ac.in', 'Kaushal Bhogale', 'D10', 18, 'pooja.shetty@ves.ac.in'),
 ('2015kiran. hiranandani@ves.ac.in', 'Kiran Hiranandani', 'D10', 35, 'roopkala.ravindran@ves.ac.in'),
 ('2015kirti.panchal@ves.ac.in', 'Kirti Panchal', 'D10', 56, 'asha.bharambhe@ves.ac.in'),
-('2015manisha. udasi@ves.ac.in', 'Manisha Udasi', 'D10', 74, 'parth.chandrana.ves.ac.in'),
+('2015manisha. udasi@ves.ac.in', 'Manisha Udasi', 'D10', 74, 'parth.chandrana@ves.ac.in'),
 ('2015mayank.agrawal@ves.ac.in', 'Mayank Agarwal', 'D10', 3, 'amit.singh@ves.ac.in'),
 ('2015mayur.lund@ves.ac.in', 'Mayur Lund', 'D10', 51, 'asha.bharambhe@ves.ac.in'),
-('2015mishall.swain@ves.ac.in', 'Mishall Swain', 'D10', 71, 'parth.chandrana.ves.ac.in'),
-('2015murlidhar.sharma@ves.ac.in', 'Murlidhar Sharma', 'D10', 66, 'parth.chandrana.ves.ac.in'),
-('2015nausheen.asif@ves.ac.in', 'Nausheen Sayed', 'D10', 64, 'parth.chandrana.ves.ac.in'),
+('2015mishall.swain@ves.ac.in', 'Mishall Swain', 'D10', 71, 'parth.chandrana@ves.ac.in'),
+('2015murlidhar.sharma@ves.ac.in', 'Murlidhar Sharma', 'D10', 66, 'parth.chandrana@ves.ac.in'),
+('2015nausheen.asif@ves.ac.in', 'Nausheen Sayed', 'D10', 64, 'parth.chandrana@ves.ac.in'),
 ('2015navin.dhamriyani@ves.ac.in', 'Navin Dhamriyani', 'D10', 27, 'pooja.shetty@ves.ac.in'),
 ('2015neha.baranwal@ves.ac.in', 'Neha Baranwal', 'D10', 10, 'amit.singh@ves.ac.in'),
 ('2015nidhi.mishra@ves.ac.in', 'Nidhi Mishra', 'D10', 53, 'asha.bharambhe@ves.ac.in'),
 ('2015nisha.khubchandani@ves.ac.in', 'Nisha Khubchandani', 'D10', 45, 'roopkala.ravindran@ves.ac.in'),
-('2015om.uparkar@ves.ac.in', 'Om Uparkar', 'D10', 75, 'parth.chandrana.ves.ac.in'),
+('2015om.uparkar@ves.ac.in', 'Om Uparkar', 'D10', 75, 'parth.chandrana@ves.ac.in'),
 ('2015onkarsingh.bagga@ves.ac.in', 'Onkar Bagga', 'D10', 7, 'amit.singh@ves.ac.in'),
 ('2015pinky.rathod@ves.ac.in', 'Pinky Rathod', 'D10', 60, 'asha.bharambhe@ves.ac.in'),
 ('2015prasad.gujar@ves.ac.in', 'Prasad Gujar', 'D10', 30, 'pooja.shetty@ves.ac.in'),
 ('2015praveen.dangwani@ves.ac.in', 'Praveen Dangwani', 'D10', 24, 'pooja.shetty@ves.ac.in'),
-('2015priya.vidhrani@ves.ac.in', 'Priya Vidhrani', 'D10', 77, 'parth.chandrana.ves.ac.in'),
+('2015priya.vidhrani@ves.ac.in', 'Priya Vidhrani', 'D10', 77, 'parth.chandrana@ves.ac.in'),
 ('2015puja.bathija@ves.ac.in', 'Puja Bathija', 'D10', 11, 'amit.singh@ves.ac.in'),
 ('2015raaj.raishinghani@ves.ac.in', 'Raaj Raisinghani', 'D10', 58, 'asha.bharambhe@ves.ac.in'),
 ('2015rachna.bahrani@ves.ac.in', 'Rachna Baharani', 'D10', 8, 'amit.singh@ves.ac.in'),
 ('2015radhika.karwa@ves.ac.in', 'Radhika  Karwa', 'D10', 44, 'roopkala.ravindran@ves.ac.in'),
-('2015riddhi.surve@ves.ac.in', 'Riddhi Surve', 'D10', 70, 'parth.chandrana.ves.ac.in'),
+('2015riddhi.surve@ves.ac.in', 'Riddhi Surve', 'D10', 70, 'parth.chandrana@ves.ac.in'),
 ('2015riya.karia@ves.ac.in', 'Riya Karia', 'D10', 43, 'roopkala.ravindran@ves.ac.in'),
 ('2015rohit.ahuja@ves.ac.in', 'Rohit Ahuja', 'D10', 4, 'amit.singh@ves.ac.in'),
-('2015ruchita.yeole@ves.ac.in', 'Ruchita Yeole', 'D10', 78, 'parth.chandrana.ves.ac.in'),
+('2015ruchita.yeole@ves.ac.in', 'Ruchita Yeole', 'D10', 78, 'parth.chandrana@ves.ac.in'),
 ('2015sagar.ganiga@ves.ac.in', 'Sagar Ganiga', 'D10', 29, 'pooja.shetty@ves.ac.in'),
 ('2015sahil.mirchandani@ves.ac.in', 'Sahil Mirchandani', 'D10', 52, 'asha.bharambhe@ves.ac.in'),
 ('2015saish.mohare@ves.ac.in', 'Saish Mohare', 'D10', 54, 'asha.bharambhe@ves.ac.in'),
@@ -150,10 +140,10 @@ INSERT INTO `mentee` (`email`, `name`, `class`, `roll_no`, `mentor`) VALUES
 ('2015vishal.israni@ves.ac.in', 'Vishal Israni', 'D10', 38, 'roopkala.ravindran@ves.ac.in'),
 ('2015yash.hemwani@ves.ac.in', 'Yash Hemwani', 'D10', 33, 'roopkala.ravindran@ves.ac.in'),
 ('aarju.shaha@ves.ac.in', 'Aarju Shaha', 'D15', 63, 'asha.bharambhe@ves.ac.in'),
-('abhinav.valecha@ves.ac.in', 'Abhinav Valecha', 'D15', 72, 'parth.chandrana.ves.ac.in'),
+('abhinav.valecha@ves.ac.in', 'Abhinav Valecha', 'D15', 72, 'parth.chandrana@ves.ac.in'),
 ('aditya.gavane@ves.ac.in', 'Aditya Gavane', 'D15', 16, 'amit.singh@ves.ac.in'),
 ('ajay.gurumurthy@ves.ac.in', 'Ajay Gurumurthy', 'D15', 20, 'pooja.shetty@ves.ac.in'),
-('akash.katkar@ves.ac.in', 'Akash katkar', 'D15', 34, 'roopkala.ravindran@ves.ac.in'),
+('akash.katkar@ves.ac.in', 'Akash Katkar', 'D15', 34, 'roopkala.ravindran@ves.ac.in'),
 ('akash.khiani@ves.ac.in', 'Akash Khiani', 'D15', 38, 'roopkala.ravindran@ves.ac.in'),
 ('akshaykumar.lilani@ves.ac.in', 'Akshaykumar Lilani', 'D15', 42, 'roopkala.ravindran@ves.ac.in'),
 ('ameya.parab@ves.ac.in', 'Ameya Parab', 'D15', 50, 'asha.bharambhe@ves.ac.in'),
@@ -161,7 +151,7 @@ INSERT INTO `mentee` (`email`, `name`, `class`, `roll_no`, `mentor`) VALUES
 ('aniket.jetwani@ves.ac.in', 'Aniket Jetwani', 'D15', 28, 'pooja.shetty@ves.ac.in'),
 ('aniket.nighot@ves.ac.in', 'Aniket Nighot', 'D15', 49, 'asha.bharambhe@ves.ac.in'),
 ('anjali.jaisinghani@ves.ac.in', 'Anjali Jaisinghani', 'D15', 26, 'pooja.shetty@ves.ac.in'),
-('anjali.wani@ves.ac.in', 'Anjali Wani', 'D15', 75, 'parth.chandrana.ves.ac.in'),
+('anjali.wani@ves.ac.in', 'Anjali Wani', 'D15', 75, 'parth.chandrana@ves.ac.in'),
 ('ankit.kesharwani@ves.ac.in', 'Ankit Kesharwani', 'D15', 35, 'roopkala.ravindran@ves.ac.in'),
 ('ankita.dharne@ves.ac.in', 'Ankita Dharne', 'D15', 12, 'amit.singh@ves.ac.in'),
 ('arpan.gulrajani@ves.ac.in', 'Arpan Gulrajani', 'D15', 19, 'pooja.shetty@ves.ac.in'),
@@ -170,11 +160,11 @@ INSERT INTO `mentee` (`email`, `name`, `class`, `roll_no`, `mentor`) VALUES
 ('ayush.kalla@ves.ac.in', 'Ayush Kalla', 'D15', 31, 'pooja.shetty@ves.ac.in'),
 ('bhavna.khatwani@ves.ac.in', 'Bhavna Khatwani', 'D15', 37, 'roopkala.ravindran@ves.ac.in'),
 ('chayan.agarwal@ves.ac.in', 'Chayan Agarwal', 'D15', 1, 'amit.singh@ves.ac.in'),
-('deepa.turshani@ves.ac.in', 'Deepa Turshani', 'D15', 71, 'parth.chandrana.ves.ac.in'),
+('deepa.turshani@ves.ac.in', 'Deepa Turshani', 'D15', 71, 'parth.chandrana@ves.ac.in'),
 ('dhiren.kewlani@ves.ac.in', 'Dhiren Kewlani', 'D15', 36, 'roopkala.ravindran@ves.ac.in'),
 ('dinesh.rupani@ves.ac.in', 'Dinesh Rupani', 'D15', 58, 'asha.bharambhe@ves.ac.in'),
 ('girish.chawla@ves.ac.in', 'Girish Chawla', 'D15', 7, 'amit.singh@ves.ac.in'),
-('hitesh.shahani@ves.ac.in', 'Hitesh Shahani', 'D15', 64, 'parth.chandrana.ves.ac.in'),
+('hitesh.shahani@ves.ac.in', 'Hitesh Shahani', 'D15', 64, 'parth.chandrana@ves.ac.in'),
 ('jai.hinduja@ves.ac.in', 'Jai Hinduja', 'D15', 23, 'pooja.shetty@ves.ac.in'),
 ('jayesh.motwani@ves.ac.in', 'Jayesh Motwani', 'D15', 45, 'roopkala.ravindran@ves.ac.in'),
 ('jayesh.nagpal@ves.ac.in', 'Jayesh Nagpal', 'D15', 48, 'roopkala.ravindran@ves.ac.in'),
@@ -184,35 +174,35 @@ INSERT INTO `mentee` (`email`, `name`, `class`, `roll_no`, `mentor`) VALUES
 ('kalpesh.juvekar@ves.ac.in', 'Kalpesh Juvekar', 'D15', 30, 'pooja.shetty@ves.ac.in'),
 ('karan.murpana@ves.ac.in', 'Karan Murpana', 'D15', 47, 'roopkala.ravindran@ves.ac.in'),
 ('krima.shah@ves.ac.in', 'Krima Shah', 'D15', 62, 'asha.bharambhe@ves.ac.in'),
-('krithika.srinivasan@ves.ac.in', 'Krithika Srinivasan', 'D15', 68, 'parth.chandrana.ves.ac.in'),
+('krithika.srinivasan@ves.ac.in', 'Krithika Srinivasan', 'D15', 68, 'parth.chandrana@ves.ac.in'),
 ('kunal.dayaramani@ves.ac.in', 'Kunal Dayaramani', 'D15', 11, 'amit.singh@ves.ac.in'),
 ('laukik.gaikwad@ves.ac.in', 'Laukik Gaikwad', 'D15', 14, 'amit.singh@ves.ac.in'),
 ('mahesh.parwani@ves.ac.in', 'Mahesh Parwani', 'D15', 51, 'asha.bharambhe@ves.ac.in'),
-('miten.solanki@ves.ac.in', 'Miten Solanki', 'D15', 67, 'parth.chandrana.ves.ac.in'),
+('miten.solanki@ves.ac.in', 'Miten Solanki', 'D15', 67, 'parth.chandrana@ves.ac.in'),
 ('neeraj.harjani@ves.ac.in', 'Neeraj Harjani', 'D15', 21, 'pooja.shetty@ves.ac.in'),
 ('nihar.karle@ves.ac.in', 'Nihar Karle', 'D15', 33, 'roopkala.ravindran@ves.ac.in'),
 ('nikhil.jethwani@ves.ac.in', 'Nikhil Jethwani', 'D15', 27, 'pooja.shetty@ves.ac.in'),
 ('nitin.rohra@ves.ac.in', 'Nitin Rohra', 'D15', 57, 'asha.bharambhe@ves.ac.in'),
-('pawan.tilwani@ves.ac.in', 'Pawan Tilwani', 'D15', 69, 'parth.chandrana.ves.ac.in'),
+('pawan.tilwani@ves.ac.in', 'Pawan Tilwani', 'D15', 69, 'parth.chandrana@ves.ac.in'),
 ('payal.popat@ves.ac.in', 'Payal Popat', 'D15', 52, 'asha.bharambhe@ves.ac.in'),
-('poojav.singh@ves.ac.in', 'Pooja Singh', 'D15', 66, 'parth.chandrana.ves.ac.in'),
+('pooja.singh@ves.ac.in', 'Pooja Singh', 'D15', 66, 'parth.chandrana@ves.ac.in'),
 ('pratik.ahuja@ves.ac.in', 'Pratik Ahuja', 'D15', 3, 'amit.singh@ves.ac.in'),
 ('punit.kulal@ves.ac.in', 'Punit Kulal', 'D15', 40, 'roopkala.ravindran@ves.ac.in'),
 ('radhika.raghuwanshi@ves.ac.in', 'Radhika Raghuwanshi', 'D15', 54, 'asha.bharambhe@ves.ac.in'),
 ('raghav.jhawar@ves.ac.in', 'Raghav Jhawar', 'D15', 29, 'pooja.shetty@ves.ac.in'),
-('rahul.shetty@ves.ac.in', 'Rahul Shetty', 'D15', 65, 'parth.chandrana.ves.ac.in'),
+('rahul.shetty@ves.ac.in', 'Rahul Shetty', 'D15', 65, 'parth.chandrana@ves.ac.in'),
 ('raj.ramchandani@ves.ac.in', 'Raj Ramchandani', 'D15', 56, 'asha.bharambhe@ves.ac.in'),
-('rajeevkumar.yadav@ves.ac.in', 'Rajeevkumar Yadav', 'D15', 76, 'parth.chandrana.ves.ac.in'),
+('rajeevkumar.yadav@ves.ac.in', 'Rajeevkumar Yadav', 'D15', 76, 'parth.chandrana@ves.ac.in'),
 ('ram.motwani@ves.ac.in', 'Ram Motwani', 'D15', 46, 'roopkala.ravindran@ves.ac.in'),
 ('rashmi.chhabria@ves.ac.in', 'Rashmi Chhabria', 'D15', 8, 'amit.singh@ves.ac.in'),
-('ravi.yadav@ves.ac.in', 'Ravi yadav', 'D15', 77, 'parth.chandrana.ves.ac.in'),
+('ravi.yadav@ves.ac.in', 'Ravi Yadav', 'D15', 77, 'parth.chandrana@ves.ac.in'),
 ('rohan.jagiasi@ves.ac.in', 'Rohan Jagiasi', 'D15', 25, 'pooja.shetty@ves.ac.in'),
-('rohini.yedelli@ves.ac.in', 'Rohini Yedelli', 'D15', 78, 'parth.chandrana.ves.ac.in'),
+('rohini.yedelli@ves.ac.in', 'Rohini Yedelli', 'D15', 78, 'parth.chandrana@ves.ac.in'),
 ('rohit.lalwani@ves.ac.in', 'Rohit Lalwani', 'D15', 41, 'roopkala.ravindran@ves.ac.in'),
-('rohit.wadhwa@ves.ac.in', 'Rohit Wadhwa', 'D15', 73, 'parth.chandrana.ves.ac.in'),
+('rohit.wadhwa@ves.ac.in', 'Rohit Wadhwa', 'D15', 73, 'parth.chandrana@ves.ac.in'),
 ('sagar.ahuja@ves.ac.in', 'Sagar Ahuja', 'D10', 5, 'amit.singh@ves.ac.in'),
 ('sahil.chanchlani@ves.ac.in', 'Sahil Chanchlani', 'D15', 5, 'amit.singh@ves.ac.in'),
-('saurabh.tripathi@ves.ac.in', 'Saurabh Tripathi', 'D15', 70, 'parth.chandrana.ves.ac.in'),
+('saurabh.tripathi@ves.ac.in', 'Saurabh Tripathi', 'D15', 70, 'parth.chandrana@ves.ac.in'),
 ('shikha.sajnani@ves.ac.in', 'Shikha Sajnani', 'D15', 59, 'asha.bharambhe@ves.ac.in'),
 ('shubham.ghosalkar@ves.ac.in', 'Shubham Ghosalkar', 'D15', 17, 'pooja.shetty@ves.ac.in'),
 ('siddhesh.hindalekar@ves.ac.in', 'Siddhesh Hindalekar', 'D15', 22, 'pooja.shetty@ves.ac.in'),
@@ -223,7 +213,7 @@ INSERT INTO `mentee` (`email`, `name`, `class`, `roll_no`, `mentor`) VALUES
 ('sonia.daryani@ves.ac.in', 'Sonia Daryani', 'D15', 10, 'amit.singh@ves.ac.in'),
 ('sooraj.holla@ves.ac.in', 'Sooraj Holla', 'D15', 24, 'pooja.shetty@ves.ac.in'),
 ('sumeet.sapla@ves.ac.in', 'Sumeet Sapla', 'D15', 60, 'asha.bharambhe@ves.ac.in'),
-('sushant.wagle@ves.ac.in', 'Sushant Wagle', 'D15', 74, 'parth.chandrana.ves.ac.in'),
+('sushant.wagle@ves.ac.in', 'Sushant Wagle', 'D15', 74, 'parth.chandrana@ves.ac.in'),
 ('sushil.kogta@ves.ac.in', 'Sushil Kogta', 'D15', 39, 'roopkala.ravindran@ves.ac.in'),
 ('uddesh.karda@ves.ac.in', 'Uddesh Karda', 'D15', 32, 'pooja.shetty@ves.ac.in'),
 ('vaibhav.gaikwad@ves.ac.in', 'Vaibhav Gaikwad', 'D15', 15, 'amit.singh@ves.ac.in'),
@@ -247,13 +237,10 @@ CREATE TABLE `mentor` (
 --
 
 INSERT INTO `mentor` (`email`, `name`, `password`, `id`) VALUES
-('', '', '', 7),
-('1212', '12', '1212', 10),
 ('amit.singh@ves.ac.in', 'Amit Singh', '1234567', 1),
 ('asha.bharambhe@ves.ac.in', 'Asha Bharambhe', '1234567', 4),
-('parth.chandrana.ves.ac.in', 'Parth Chandrana', '1234567', 5),
+('parth.chandrana@ves.ac.in', 'Parth Chandrana', '1234567', 5),
 ('pooja.shetty@ves.ac.in', 'Pooja Shetty', '1234567', 2),
-('qwqw', 'qwq', 'qwwww', 11),
 ('roopkala.ravindran@ves.ac.in', 'Roopkala Ravindran', '1234567', 3);
 
 -- --------------------------------------------------------
@@ -272,8 +259,12 @@ CREATE TABLE `next_meet` (
 --
 
 INSERT INTO `next_meet` (`email`, `next_meet`) VALUES
-('2015harsha.achara@ves.ac.in', '2017-04-09'),
-('2015hema.lulla@ves.ac.in', '2017-04-14');
+('2015aman.gupta@ves.ac.in', '2017-04-07'),
+('2015sagar.ganiga@ves.ac.in', '2017-04-09'),
+('ameya.parab@ves.ac.in', '2017-04-07'),
+('nitin.rohra@ves.ac.in', '2017-04-12'),
+('payal.popat@ves.ac.in', '2017-04-08'),
+('raj.ramchandani@ves.ac.in', '2017-04-09');
 
 -- --------------------------------------------------------
 
@@ -359,7 +350,7 @@ ALTER TABLE `studentprofile`
 -- AUTO_INCREMENT for table `mentor`
 --
 ALTER TABLE `mentor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- Constraints for dumped tables
 --

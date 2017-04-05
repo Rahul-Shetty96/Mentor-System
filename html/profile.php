@@ -34,8 +34,8 @@
     header('Location:logform2.php');
     }
 
-     $res = mysqli_query($con,"select name,class,roll_no from mentee where email = '".$_GET['email']."'");
-     $a = mysqli_fetch_assoc($res);
+      $res = mysqli_query($con,"select name,class,roll_no from mentee where email = '".$_GET['email']."'");
+      $a = mysqli_fetch_assoc($res);
       $name = $a['name'];
       $clss = $a['class'];
       $roll = $a['roll_no'];
@@ -44,7 +44,7 @@
 <div class="container class_name">
 	<ul class="breadcrumb">
 	    <li><a href="mentorpage.php">Home</a></li>
-	    <li><a href="studentprofile.php/email=<?php echo $_GET['email'] ?>"><?php echo $name." (Class : ".$clss." &nbsp&nbsp Roll no : ".$roll." )"; ?></a></li>
+	    <li><a href="studentprofile.php?email=<?php echo $_GET['email'] ?>"><?php echo $name." (Class : ".$clss." &nbsp&nbsp Roll no : ".$roll." )"; ?></a></li>
 	</ul>
 </div>
 
@@ -75,6 +75,9 @@
 			</div>
 			<div class="col-md-12 datebox">
 				<input type="text" id="datepicker"  class="date">
+				<div class="date_error alert alert-danger">
+					Please select a date
+				</div>
 			</div>
 			<div class="btn_div">
 				<button class="btn btn-default btn-primary" onclick="next_meet()">Submit</button>

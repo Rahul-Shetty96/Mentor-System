@@ -33,3 +33,10 @@
 .table_container{
 	margin-bottom: 50px;
 }
+
+.date_error{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	display: none;
+}
+

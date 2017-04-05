@@ -18,14 +18,17 @@
     
     session_start();
     if(!isset($_SESSION['email']))
-    header('Location:logform2.php');
+    {
+      header('Location:logform2.php');
+    }
     require '../php/dp.php';
     if(isset($_POST['logout']))
     {
     session_destroy();
     header('Location:logform2.php');
     }
-    $res = mysqli_query($con,"select name,email,admission_year,address_home,address_current,num_own,cgpi,hobbies,ambitions,reason_for_eng,father_name,address_father,num_father,mother_name,address_mother,num_mother,affinity,no_sibling,acad_issue,nonacad_issue from studentprofile where email = '".$_GET['email']."'"); 
+    $email = $_GET['email'];
+    $res = mysqli_query($con,"select name,email,admission_year,address_home,address_current,num_own,cgpi,hobbies,ambitions,reason_for_eng,father_name,address_father,num_father,mother_name,address_mother,num_mother,affinity,no_sibling,acad_issue,nonacad_issue from studentprofile where email = '".$email."'"); 
     $a = mysqli_fetch_assoc($res);
     $name = $a['name'];
     $email = $a['email'];

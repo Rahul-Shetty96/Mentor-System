@@ -128,21 +128,21 @@
 		    		<div class="col-md-offset-1 col-md-2">
 		    			<input type="text" class="form-control csname" name="name" placeholder="Name" required>
 		    		</div>
-		    		<div class="col-md-2">
+		    		<div class="col-md-3">
 		    			<input type="email" class="form-control csemail" name="email" placeholder="Email" required>
 		    			<input type="hidden" class="cshidden" name="hiddenemail">
 		    		</div>
-		    		<div class="form-group col-md-2" id="selectclass">
+		    		<div class="form-group col-md-1" id="selectclass">
 				 		<select class="form-control csclass" id="sel1" name="class" required>
 							 <option>D10</option>
 							 <option>D15</option>
 							 <option>D20</option>
 				    	</select>
 					</div>
-		    		<div class="col-md-2">
+		    		<div class="col-md-1">
 		    			<input type="number" class="form-control csroll" name="rollno" placeholder="Roll no" required>
 		    		</div>
-		    		<div class="col-md-2">
+		    		<div class="col-md-3">
 		    			<input type="email" class="form-control csmentor" name="mentor" placeholder="Mentor" required>
 		    		</div>
 		    		<div class="col-md-1">
