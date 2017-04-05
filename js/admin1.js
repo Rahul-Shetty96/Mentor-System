@@ -1,5 +1,13 @@
 $(document).ready(function(){
    $("#logoutbtn").css('display','block'); 
+
+
+
+   $(window).load(function() 
+   {
+       $(".se-pre-con").fadeOut("slow");;
+    });
+
 });
 
 var prev_c = -1;

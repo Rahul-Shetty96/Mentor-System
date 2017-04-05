@@ -1,11 +1,19 @@
 $(function(){
 
+	$(window).load(function() 
+   	{
+       $(".se-pre-con").fadeOut("slow");;
+    });
+	
+
 	$(".error").hide();
 	$("#logoutbtn").css('display','block');
 	display_meets();
 	
 	$( "#datepicker" ).datepicker({ minDate:2, maxDate: "+1M" });
     $( "#datepicker" ).datepicker( "option", "showAnim", "slideDown" );
+
+     
 
 });
 

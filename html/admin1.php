@@ -8,6 +8,8 @@
 	<script src="../js/jquery.js" type="text/javascript"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/admin1.js" type="text/javascript"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+	<script src="../js/validation.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"></script>
 	<link href="../css/header.css" rel="stylesheet">
 	
@@ -176,20 +178,21 @@
 
 <div class="container-fluid" id="add_mentor">
 	<div class="row row3h">
+	<form id="adminlogin">
 			<!-- ajax call-->
-				<div class="col-md-3 col-md-offset-1">
-					<input type="text" class="form-control mentor_name" placeholder="Mentor name">
+				<div class="form-group col-md-3 col-md-offset-1">
+					<input type="text" class="form-control mentor_name" placeholder="Mentor name" name="mentor_name">
+				</div>
+				<div class="col-md-3 form-group">
+					<input type="email" class="form-control mentor_email" placeholder="Mentor Email" name="mentor_email">
+				</div>
+				<div class="form-group col-md-2">
+					<input type="text" class="form-control mentor_pwd" placeholder="Password" name="mentor_pwd">
 				</div>
 				<div class="col-md-3">
-					<input type="email" class="form-control mentor_email" placeholder="Mentor Email">
+					<button class="btn btn-primary" >Create</button>
 				</div>
-				<div class="col-md-2">
-					<input type="text" class="form-control mentor_pwd" placeholder="Password">
-				</div>
-				<div class="col-md-3">
-					<button class="btn btn-primary" onclick="add_mentor()">Create</button>
-				</div>
-			</form>
+	</form>
 	</div><!--.row2h-->
 </div><!--container-fluid(change_student)-->
 

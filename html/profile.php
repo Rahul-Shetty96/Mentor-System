@@ -20,7 +20,6 @@
   
 </head>
 <body>
-
 <?php require 'header.php'; 
 	  session_start();
     if(!isset($_SESSION['email']))
