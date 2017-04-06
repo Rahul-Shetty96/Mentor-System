@@ -115,7 +115,7 @@
                 $interval = date_diff($curdate,$nextdate);
                 $days = $interval->format("%a");
                 //echo $roll."  ".$days."  ".date_format($curdate,"Y/m/d H:i:s")."   ".date_format($nextdate,"Y/m/d H:i:s")."<br />";
-                if($days<3 && $days>0)     //Within three days k andar waalo ka green color.....
+                if($days<3 && $days>=0)     //Within three days k andar waalo ka green color.....
                 {
                   $addclass = "class=\"alert alert-success\"";
                 }
