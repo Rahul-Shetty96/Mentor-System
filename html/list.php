@@ -84,7 +84,7 @@ for($x = 1; $x <= $n; $x++)
 
 	for($x = 1; $x <= $n; $x++)
 	{
-		$res1 = mysqli_query($con,"select name from mentee where roll_no='$x'");
+		$res1 = mysqli_query($con,"select name from mentee where roll_no='$x' and class='$class'");
 		$a = mysqli_fetch_assoc($res1);
 		$name = $a['name'];
 
@@ -93,7 +93,7 @@ for($x = 1; $x <= $n; $x++)
 		$mentor_name = $a['name'];
 
 		$email = $a['email'];
-		mysqli_query($con,"update mentee set mentor='$email' where roll_no='$x'");
+		mysqli_query($con,"update mentee set mentor='$email' where roll_no='$x' and class='$class'");
 		$pr = "<tr><td>".$x."</td><td>".$name."</td><td>".$mentor_name."</td></tr>";
 		echo $pr;
 	}
